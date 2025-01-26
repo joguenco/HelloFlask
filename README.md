@@ -50,3 +50,11 @@ pip install -r requirements.txt
 ```
 flask --app flaskr run --debug
 ```
+
+## Run with a Production Server
+```
+pip install waitress
+```
+```
+waitress-serve --call 'flaskr:create_app'
+```

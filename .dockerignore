@@ -1,0 +1,5 @@
+venv/
+doc/
+*.pyc
+Dockerfile
+docker-compose.yml

@@ -1,0 +1,11 @@
+# Httpie
+
+## Get Ping
+```
+http http://localhost:8080/hello/v1/ping
+```
+
+## Get Version
+```
+http http://localhost:8080/hello/v1/version
+```
