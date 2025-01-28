@@ -10,7 +10,6 @@ def create_app():
     api = Api(app)
 
     env = os.environ.get('ENV', 'development')
-    print(f'ENV: {env}')
 
     if env == 'development':
         app.config.from_pyfile('config.cfg')

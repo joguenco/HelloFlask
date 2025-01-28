@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for helloflask on 2025-01-25T23:18:52-05:00
+# fly.toml app configuration file generated for helloflask on 2025-01-28T14:21:16-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -7,6 +7,14 @@ app = 'helloflask'
 primary_region = 'mia'
 
 [build]
+
+[env]
+  DATABASE = 'hello'
+  ENV = 'production'
+  HOST = 'helloflaskdb.flycast'
+  PASSWORD = 'N0PiratearXfavor'
+  PORT = '5432'
+  USER = 'hello'
 
 [http_service]
   internal_port = 8080
@@ -17,6 +25,5 @@ primary_region = 'mia'
   processes = ['app']
 
 [[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
-  cpus = 1
+  size = 'shared-cpu-1x'
+  memory = '256mb'

@@ -13,7 +13,6 @@ RUN apt-get update && \
         git \
         build-essential \
         libpq-dev \
-        vim \
         postgresql-client
 
 
